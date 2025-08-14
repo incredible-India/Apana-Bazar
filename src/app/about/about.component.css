@@ -1,0 +1,294 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+
+  .bg-blue-600 {
+    background-image: linear-gradient(90deg, #7b2ff7, #f107a3);
+  }
+
+  .text-white {
+    color: #ffffff;
+  }
+
+  .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .font-light {
+    font-weight: 300;
+  }
+
+  .py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gap-8 {
+    gap: 2rem;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .font-semibold {
+    font-weight: 600;
+  }
+
+  .text-gray-800 {
+    color: #1f2937;
+  }
+
+  .border-l-4 {
+    border-left-width: 4px;
+  }
+
+  .border-blue-600 {
+    border-color: #2563eb;
+  }
+
+  .pl-4 {
+    padding-left: 1rem;
+  }
+
+  .text-gray-700 {
+    color: #374151;
+  }
+
+  .leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .rounded-xl {
+    border-radius: 1rem;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .h-auto {
+    height: auto;
+  }
+
+  .object-cover {
+    object-fit: cover;
+  }
+
+  .bg-white {
+    background-color: #ffffff;
+  }
+
+  .p-8 {
+    padding: 2rem;
+  }
+
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gap-8 {
+    gap: 2rem;
+  }
+
+  .p-6 {
+    padding: 1.5rem;
+  }
+
+  .transform {
+    transform: translate(0, 0);
+  }
+
+  .transition {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+
+  .w-32 {
+    width: 8rem;
+  }
+
+  .h-32 {
+    height: 8rem;
+  }
+
+  .rounded-full {
+    border-radius: 9999px;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .border-4 {
+    border-width: 4px;
+  }
+
+  .border-blue-300 {
+    border-color: #93c5fd;
+  }
+
+  .text-xl {
+    font-size: 1.25rem;
+  }
+
+  .text-blue-600 {
+    color: #2563eb;
+  }
+
+  .font-medium {
+    font-weight: 500;
+  }
+
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .bg-blue-50 {
+    background-color: #eff6ff;
+  }
+
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gap-6 {
+    gap: 1.5rem;
+  }
+
+  .w-12 {
+    width: 3rem;
+  }
+
+  .h-12 {
+    height: 3rem;
+  }
+
+  .fill-none {
+    fill: none;
+  }
+
+  .stroke-current {
+    stroke: currentColor;
+  }
+
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (min-width: 768px) {
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }

@@ -1,0 +1,53 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="bg-gray-100 min-h-screen p-8">
+  <div class="container mx-auto">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Featured Products</h1>
+
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="flex justify-center items-center h-64">
+      <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
+    </div>
+
+
+    <div *ngIf="!isLoading && errorMessage" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+      <strong class="font-bold">Error!</strong>
+      <span class="block sm:inline"> {{ errorMessage }}</span>
+    </div>
+
+
+    <div *ngIf="!isLoading && !errorMessage" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div *ngFor="let product of products" class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+   
+        <img [src]="product.thumbnail" [alt]="product.title" class="w-full h-48 object-cover object-center">
+        
+   
+        <div class="p-5">
+    
+          <h2 class="text-xl font-semibold text-gray-800 truncate mb-1" [title]="product.title">{{ product.title }}</h2>
+          
+ 
+          <p class="text-sm text-gray-500 mb-3">{{ product.category | titlecase }} by <span class="font-medium text-gray-600">{{ product.brand }}</span></p>
+          
+     
+          <div class="flex items-baseline mb-3">
+            <span class="text-2xl font-bold text-blue-600 mr-2">${{ product.price | number:'1.2-2' }}</span>
+            <span *ngIf="product.discountPercentage > 0" class="text-sm text-red-500 line-through">${{ (product.price / (1 - product.discountPercentage / 100)) | number:'1.2-2' }}</span>
+          </div>
+          
+   
+          <div class="flex items-center mb-4">
+            <span class="text-yellow-400 mr-1">&#9733;</span>
+            <span class="text-gray-600 font-medium">{{ product.rating | number:'1.1-1' }}</span>
+            <span class="text-sm text-gray-400 ml-2">({{ product.stock }} in stock)</span>
+          </div>
+
+          <button (click)="viewProductDetails(product.id)" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-bold hover:bg-blue-700 transition duration-300">
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

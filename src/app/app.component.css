@@ -1,0 +1,36 @@
+
+
+  body{
+    background-color: black;
+  }
+
+.navbar {
+        background: linear-gradient(90deg, #7b2ff7, #f107a3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        color: white;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .menu li {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .navbar .menu li:hover {
+        text-decoration: underline;
+    }
