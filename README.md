@@ -1,6 +1,7 @@
-# ApnaBazar
+# ApnaBazar An Online Shopping App 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.13.
+In this project dummy Api has been used ref- https://dummyjson.com/docs/products#products-single
 
 ## Development server
 
@@ -22,6 +23,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+in case of any help
+call - 8604470501
+## Preview
+<img width="1864" height="833" alt="image" src="https://github.com/user-attachments/assets/c5d7998c-419e-483a-8003-f3ac1e9139a5" />
+
